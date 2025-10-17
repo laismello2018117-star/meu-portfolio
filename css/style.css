@@ -1,1 +1,50 @@
+.titulo {
+  margin-top: 100px;
+  font-weight: 700;
+  color: #FFD700 !important; /* dourado/brilhante */
+  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.2); /* leve brilho estilo estrela */
+}
 
+.subtitulo {
+  color: #A9A9A9; /* cinza claro */
+}
+
+body {
+  scroll-behavior: smooth;
+  background-color: #0B0C10; /* fundo escuro estilo espaço */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #FFFFFF; /* texto padrão branco */
+}
+
+.navbar {
+  background: linear-gradient(90deg, #0B0C10, #1C1F2A); /* gradiente escuro */
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  color: #F0E68C; /* amarelo suave estilo estrela */
+}
+
+.card {
+  border: none;
+  background: #1C1F2A; /* tom escuro */
+  color: #FFFFFF; /* texto branco */
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(255, 255, 255, 0.2); /* brilho estilo estrela */
+}
+
+/* Rodapé */
+footer {
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+  color: #A9A9A9;
+  background-color: #0B0C10;
+  text-align: center;
+  padding: 15px 0;
+}
