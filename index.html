@@ -36,6 +36,66 @@
     <p class="lead subtitulo">Desenvolvedor Web iniciante e apaixonada por astronomia</p>
   </div>
 
+    <!-- Galeria de Fotos (Carrossel) -->
+  <div class="container mt-5">
+    <h2 class="text-center mb-4">Galeria de Fotos</h2>
+ 
+    <div id="galeriaCarousel" class="carousel slide" data-bs-ride="carousel">
+      <!-- Indicadores -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#galeriaCarousel" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#galeriaCarousel" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#galeriaCarousel" data-bs-slide-to="2"></button>
+        <button type="button" data-bs-target="#galeriaCarousel" data-bs-slide-to="3"></button>
+      </div>
+ 
+      <!-- Imagens -->
+      <div class="carousel-inner rounded shadow-lg">
+        <div class="carousel-item active">
+          <img src="https://deliriumnerd.com/wp-content/uploads/2023/10/coraline-1200-1200-675-675-crop-000000.jpg" class="d-block w-100" alt="Foto 1">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Coraline</h5>
+            <p>2009.</p>
+          </div>
+        </div>
+ 
+        <div class="carousel-item">
+          <img src="https://rollingstone.com.br/wp-content/uploads/legacy/2012/img-1009204-frankenweenie.jpg" class="d-block w-100" alt="Foto 2">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Frankenweenie</h5>
+            <p>2012.</p>
+          </div>
+        </div>
+ 
+        <div class="carousel-item">
+          <img src="https://picsum.photos/id/1041/1200/500" class="d-block w-100" alt="Foto 3">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Céu Dourado</h5>
+            <p>Beleza do pôr do sol capturada.</p>
+          </div>
+        </div>
+ 
+        <div class="carousel-item">
+          <img src="https://picsum.photos/id/1084/1200/500" class="d-block w-100" alt="Foto 4">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Reflexos</h5>
+            <p>A harmonia entre luz e água.</p>
+          </div>
+        </div>
+      </div>
+ 
+      <!-- Controles -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#galeriaCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#galeriaCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+        <span class="visually-hidden">Próximo</span>
+      </button>
+    </div>
+  </div>
+
   <!-- Cards de Projetos -->
   <div class="container mt-5">
     <div class="row text-center">
@@ -79,4 +139,5 @@
   <!-- Bootstrap JS via CDN -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
