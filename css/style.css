@@ -24,11 +24,12 @@ html, body{height:100%; margin:0; font-family: 'Segoe UI', Tahoma, Geneva, Verda
 .titulo {
   margin-top: 100px;
   font-weight: 700;
-  color: var(--text-1) !important;
-  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.2);
+  color: black !important;
+  text-shadow: 0 1px 0 rgba(0,0,0,0.05);
 }
+
 .subtitulo {
-  color: var(--subtext);
+  color: #6c757d;
 }
 
 /* ===== Navbar ===== */
@@ -145,3 +146,4 @@ footer {
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
