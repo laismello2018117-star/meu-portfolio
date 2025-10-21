@@ -24,6 +24,9 @@
           <li class="nav-item"><a class="nav-link" href="#">Início</a></li>
           <li class="nav-item"><a class="nav-link" href="#">Projetos</a></li>
           <li class="nav-item"><a class="nav-link" href="#">Contato</a></li>
+
+          <!-- ✅ NOVA PÁGINA ADICIONADA -->
+          <li class="nav-item"><a class="nav-link" href="buracosnegros.html">Buracos Negros</a></li>
         </ul>
       </div>
     </div>
@@ -31,17 +34,15 @@
 
   <!-- Seção de Apresentação -->
   <div class="container text-center mt-5 pt-5">
-    <!-- A classe .titulo será estilizada no css -->
     <h1 class="titulo">Olá, sou Lais</h1>
     <p class="lead subtitulo">Desenvolvedor Web iniciante e apaixonada por astronomia</p>
   </div>
 
-    <!-- Galeria de Fotos (Carrossel) -->
+  <!-- Galeria de Fotos (Carrossel) -->
   <div class="container mt-5">
     <h2 class="text-center mb-4">Galeria de Fotos</h2>
  
     <div id="galeriaCarousel" class="carousel slide" data-bs-ride="carousel">
-      <!-- Indicadores -->
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#galeriaCarousel" data-bs-slide-to="0" class="active"></button>
         <button type="button" data-bs-target="#galeriaCarousel" data-bs-slide-to="1"></button>
@@ -49,7 +50,6 @@
         <button type="button" data-bs-target="#galeriaCarousel" data-bs-slide-to="3"></button>
       </div>
  
-      <!-- Imagens -->
       <div class="carousel-inner rounded shadow-lg">
         <div class="carousel-item active">
           <img src="https://hd2.tudocdn.net/1243175?w=1920" class="d-block w-100" alt="Foto 1">
@@ -58,33 +58,32 @@
             <p>Buracos negros são regiões do espaço-tempo com um campo gravitacional tão intenso que nada, nem mesmo a luz, pode escapar deles.</p>
           </div>
         </div>
- 
+
         <div class="carousel-item">
           <img src="https://img.odcdn.com.br/wp-content/uploads/2023/12/olho-1024x634.png" class="d-block w-100" alt="Foto 2">
           <div class="carousel-caption d-none d-md-block">
             <h5>Nebulosa olho de deus</h5>
-            <p> Ela recebeu esse nome por sua aparência que lembra um olho gigante visto da Terra e é formada pelos restos de uma estrela semelhante ao nosso Sol após sua morte. .</p>
+            <p>Ela recebeu esse nome por sua aparência que lembra um olho gigante.</p>
           </div>
         </div>
- 
+
         <div class="carousel-item">
           <img src="https://t.ctcdn.com.br/i04y-5bVIRKDP7SbzvwrlIbQDG4=/640x360/smart/i650691.png" class="d-block w-100" alt="Foto 3">
           <div class="carousel-caption d-none d-md-block">
             <h5>Nebulosa da borboleta</h5>
-            <p>A nebulosa é classificada como nebulosa planetária devido ao seu formato, que lembra um planeta, embora não tenha relação com eles.</p>
+            <p>Nebulosa planetária com formato que lembra asas de borboleta.</p>
           </div>
         </div>
- 
+
         <div class="carousel-item">
           <img src="https://img.odcdn.com.br/wp-content/uploads/2022/03/buracos-de-minhoca-capa.jpg" alt="Foto 4">
           <div class="carousel-caption d-none d-md-block">
             <h5>Buraco de minhoca</h5>
-            <p>Uma passagem teórica através do espaço-tempo que conectaria dois pontos distantes no universo, funcionando como um atalho.</p>
+            <p>Atalho teórico no espaço-tempo.</p>
           </div>
         </div>
       </div>
  
-      <!-- Controles -->
       <button class="carousel-control-prev" type="button" data-bs-target="#galeriaCarousel" data-bs-slide="prev">
         <span class="carousel-control-prev-icon"></span>
         <span class="visually-hidden">Anterior</span>
@@ -100,13 +99,15 @@
   <div class="container mt-5">
     <div class="row text-center">
       <div class="col-md-4 mb-4">
-        <div class="card h-100 shadow-sm">
-          <img src="https://thvnext.bing.com/th?id=OIF.C%2fHLdfk%2b5y34pnhFSirviw&cb=12ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3/400x250" class="card-img-top" alt="Buracos negros">
-          <div class="card-body">
-            <h5 class="card-title">Buracos negros</h5>
-            <p class="card-text">Um site sobre os objetos mais pesados do universo.</p>
+        <a href="buracosnegros.html" class="text-decoration-none text-dark"> <!-- ✅ CARD AGORA ABRE A PÁGINA -->
+          <div class="card h-100 shadow-sm">
+            <img src="https://thvnext.bing.com/th?id=OIF.C%2fHLdfk%2b5y34pnhFSirviw&cb=12ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3/400x250" class="card-img-top" alt="Buracos negros">
+            <div class="card-body">
+              <h5 class="card-title">Buracos negros</h5>
+              <p class="card-text">Um site sobre os objetos mais pesados do universo.</p>
+            </div>
           </div>
-        </div>
+        </a>
       </div>
 
       <div class="col-md-4 mb-4">
@@ -114,7 +115,7 @@
           <img src="https://tse4.mm.bing.net/th/id/OIP.G7eWktUIi8b8zPVQOBrBOAHaEK?cb=12ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3/400x250" class="card-img-top" alt="Estrela de nêutrons">
           <div class="card-body">
             <h5 class="card-title">Estrela de nêutrons</h5>
-            <p class="card-text">As estrela's de nêutrons são corpos celestes superdensos, compostos quase que inteiramente de nêutrons.</p>
+            <p class="card-text">Objetos superdensos compostos quase só por nêutrons.</p>
           </div>
         </div>
       </div>
@@ -124,7 +125,7 @@
           <img src="https://thvnext.bing.com/th/id/OIP.gyLjaazAW-QxiUOkGWBWIQHaE_?o=7&cb=12rm=3&ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3/400x250" class="card-img-top" alt="Quasares">
           <div class="card-body">
             <h5 class="card-title">Quasares</h5>
-            <p class="card-text">Extremamente luminosos e distantes, que emitem grandes quantidades de energia.</p>
+            <p class="card-text">Fontes extremamente luminosas e distantes do universo.</p>
           </div>
         </div>
       </div>
@@ -136,11 +137,10 @@
     <p>© 2025 Meu Portfólio - Todos os direitos reservados.</p>
   </footer>
 
-  <!-- Bootstrap JS via CDN -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>
+
 
 
 
