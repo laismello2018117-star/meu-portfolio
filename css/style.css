@@ -19,52 +19,6 @@ html, body {
   position: relative;
 }
 
-/* ===ESTRELAS ANIMADAS=== */
-.stars, .nebula {
-  position: fixed;
-  top: 0; left: 0;
-  width: 60%;
-  height: 60%;
-  pointer-events: none;
-}
-
-/* Estrelas pequenas */
-.stars::before {
-  content: "";
-  position: absolute;
-  width: 60%;
-  height: 60%;
-  background-image: radial-gradient(white 1px, transparent 1px);
-  background-size: 2px 2px;
-  opacity: 0.5;
-  animation: moveStarsSlow 120s linear infinite;
-}
-
-
-
-/* Estrelas maiores */
-.stars::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-image: radial-gradient(white 1.5px, transparent 1px);
-  background-size: 4px 4px;
-  opacity: 0.3;
-  animation: moveStarsFast 60s linear infinite;
-}
-
-/* Animações das estrelas */
-@keyframes moveStarsSlow {
-  from { background-position: 0 0; }
-  to   { background-position: -5000px 2500px; }
-}
-
-@keyframes moveStarsFast {
-  from { background-position: 0 0; }
-  to   { background-position: 5000px -2500px; }
-}
-
 /* === HERO / TÍTULOS=== */
 .hero {
   padding: 120px 0 40px;
@@ -124,6 +78,7 @@ footer {
   .hero h1 { font-size: clamp(24px, 7vw, 36px); }
   .hero p.lead { font-size: 1rem; }
 }
+
 
 
 
