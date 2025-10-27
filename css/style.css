@@ -17,9 +17,17 @@ html, body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: var(--text-1);
-  background-color: var(--bg-1);
   overflow-x: hidden;
   scroll-behavior: smooth;
+  background: transparent !important;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -5;
+  background-color: var(--bg-1);
 }
 
 /* ===============================
@@ -177,3 +185,4 @@ footer {
   .hero p.lead { font-size: 1rem; }
   .row img { margin-bottom: 15px; }
 }
+
