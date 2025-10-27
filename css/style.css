@@ -1,8 +1,4 @@
-
-/* ==========================
-   VARIÁVEIS DE CORES
-=========================== */
-
+/* ===VARIÁVEIS DE CORES=== */
 :root {
   --bg-1: #04050a;       /* fundo mais escuro */
   --bg-2: #071029;       /* fundo gradiente azul profundo */
@@ -11,10 +7,7 @@
   --muted: #A9A9A9;      /* cinza suave */
 }
 
-/* ===============================
-   RESET E BASE
-=========================== */
-
+/* ===RESET E BASE=== */
 html, body {
   height: 100%;
   margin: 0;
@@ -24,21 +17,15 @@ html, body {
   overflow-x: hidden;
   scroll-behavior: smooth;
   position: relative;
-
 }
 
-
-/* ===============================
-   ESTRELAS ANIMADAS
-=============================== */
-
+/* ===ESTRELAS ANIMADAS=== */
 .stars, .nebula {
   position: fixed;
   top: 0; left: 0;
-  width: 100%;
-  height: 100%;
+  width: 60%;
+  height: 60%;
   pointer-events: none;
-
 }
 
 
@@ -48,8 +35,8 @@ html, body {
 .stars::before {
   content: "";
   position: absolute;
-  width: 100%;
-  height: 100%;
+  width: 60%;
+  height: 60%;
   background-image: radial-gradient(white 1px, transparent 1px);
   background-size: 2px 2px;
   opacity: 0.5;
@@ -161,6 +148,7 @@ footer {
   .hero p.lead { font-size: 1rem; }
 
 }
+
 
 
 
