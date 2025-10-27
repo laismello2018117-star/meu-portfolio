@@ -97,10 +97,13 @@ html, body {
 }
 
 /* ===============================
-   NAVBAR
+    NAVBAR
 =============================== */
 .navbar {
+  /* ... seu background atual ... */
   background: linear-gradient(90deg, var(--bg-1), #1C1F2A);
+  /* Adicione um toque de brilho na parte inferior */
+  box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1); 
 }
 
 .navbar-brand {
@@ -144,4 +147,5 @@ footer {
   .hero h1 { font-size: clamp(24px, 7vw, 36px); }
   .hero p.lead { font-size: 1rem; }
 }
+
 
