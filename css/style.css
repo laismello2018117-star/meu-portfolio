@@ -28,10 +28,7 @@ html, body {
   pointer-events: none;
 }
 
-
-
 /* Estrelas pequenas */
-
 .stars::before {
   content: "";
   position: absolute;
@@ -46,7 +43,6 @@ html, body {
 
 
 /* Estrelas maiores */
-
 .stars::after {
   content: "";
   position: absolute;
@@ -59,7 +55,6 @@ html, body {
 }
 
 /* Nebulosas suaves */
-
 .nebula {
   z-index: -1;
   background: radial-gradient(circle at 20% 30%, rgba(80,120,180,0.08), transparent 15%),
@@ -77,9 +72,7 @@ html, body {
   to   { background-position: 5000px -2500px; }
 }
 
-/* ===============================
-   HERO / TÍTULOS
-=============================== */
+/* === HERO / TÍTULOS=== */
 .hero {
   padding: 120px 0 40px;
   text-align: center;
@@ -97,9 +90,7 @@ html, body {
   color: var(--muted);
 }
 
-/* ===============================
-   NAVBAR
-=============================== */
+/* === NAVBAR=== */
 .navbar {
   background: linear-gradient(90deg, var(--bg-1), #1C1F2A);
 }
@@ -110,9 +101,7 @@ html, body {
   color: #F0E68C !important;
 }
 
-/* ===============================
-   CARDS
-=============================== */
+/* === CARDS=== */
 
 .card {
   border: none;
@@ -127,10 +116,7 @@ html, body {
   box-shadow: 0 6px 20px rgba(255, 255, 255, 0.2);
 }
 
-/* ===============================
-   RODAPÉ
-=============================== */
-
+/* ===RODAPÉ=== */
 footer {
   font-size: 0.9rem;
   letter-spacing: 0.5px;
@@ -140,14 +126,12 @@ footer {
   padding: 15px 0;
 }
 
-/* ===============================
-   RESPONSIVO
-=============================== */
+/* ===RESPONSIVO=== */
 @media (max-width: 768px) {
   .hero h1 { font-size: clamp(24px, 7vw, 36px); }
   .hero p.lead { font-size: 1rem; }
-
 }
+
 
 
 
