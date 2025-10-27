@@ -10,17 +10,19 @@
 }
 
 /* ===============================
-   RESET E BASE
+    RESET E BASE
 =============================== */
 html, body {
-  height: 100%;
-  margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: var(--text-1);
-  background-color: var(--bg-1);
-  overflow-x: hidden;
-  scroll-behavior: smooth;
-  position: relative;
+    height: 100%;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--text-1);
+    /* Garante que o fundo seja o mais escuro */
+    background-color: var(--bg-1); 
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    position: relative;
+    z-index: 0; /* z-index de base, acima das estrelas */
 }
 
 /* ===============================
@@ -32,34 +34,32 @@ html, body {
     width: 100%;
     height: 100%;
     pointer-events: none;
-    /* fundo animado na camada mais profunda */
-    z-index: -10; 
+    z-index: -10; /* Garante que estejam no fundo */
 }
 
 /* Estrelas pequenas */
 .stars::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-image: radial-gradient(white 1px, transparent 1px);
-  background-size: 2px 2px;
-  opacity: 0.5;
-  animation: moveStarsSlow 120s linear infinite;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(white 1px, transparent 1px);
+    background-size: 3px 3px; /* Aumentado para 3px x 3px */
+    opacity: 0.6; /* Aumentado para 0.6 */
+    animation: moveStarsSlow 120s linear infinite;
 }
 
 /* Estrelas maiores */
 .stars::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-image: radial-gradient(white 1.5px, transparent 1px);
-  background-size: 4px 4px;
-  opacity: 0.3;
-  animation: moveStarsFast 60s linear infinite;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(white 1.8px, transparent 1px); /* Ponto ligeiramente maior */
+    background-size: 6px 6px; /* Aumentado para 6px x 6px */
+    opacity: 0.4; /* Aumentado para 0.4 */
+    animation: moveStarsFast 60s linear infinite;
 }
-
 /* Nebulosas suaves */
 .nebula {
   z-index: -1;
