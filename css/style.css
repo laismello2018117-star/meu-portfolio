@@ -17,12 +17,13 @@ html, body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: var(--text-1);
-  background-color: var(--bg-1);
+  /* APLICAR COR DE FUNDO DIRETAMENTE E VIA VARIÁVEL */
+  background-color: #04050a; /* VALOR FIXO: Fundo mais escuro */
+  background-color: var(--bg-1); /* GARANTIR: Usar a variável CSS */
   overflow-x: hidden;
   scroll-behavior: smooth;
   position: relative;
 }
-
 /* ===============================
    FUNDO ESTÁTICO DE UNIVERSO (Substitui as Estrelas Animadas)
 =============================== */
@@ -116,6 +117,7 @@ footer {
   .hero h1 { font-size: clamp(24px, 7vw, 36px); }
   .hero p.lead { font-size: 1rem; }
 }
+
 
 
 
